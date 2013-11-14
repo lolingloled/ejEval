@@ -3,49 +3,49 @@ import utilidades.*;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
-		final int DOLOR_DE_BARRIGA=2500;
+		final int DOLOR_DE_BARRIGA=2534;
 		int pestCom=0, numCop=0, nivGrad=0, glotNav=0, fact=1;
 		char salida=' ';
-		System.out.println("Bienvenido a nuestro programa, le haremos saber cuán gordo está usted");
+		System.out.println("Bienvenido a nuestro programa, le haremos saber cuï¿½n gordo estï¿½ usted");
 		do{
 			
 				while (pestCom==0){					//Para asegurarnos de que sean 5 o menos
-			System.out.println("Introduzca número de pestiños que ha consumido (recuerde que no más de 5)");
+			System.out.println("Introduzca nï¿½mero de pestiï¿½os que ha consumido (recuerde que no mï¿½s de 5)");
 			pestCom=Leer.datoInt();
 				
 			if (pestCom>5){
-				System.out.println("NO MÁS DE 5 (recordatorio)");
+				System.out.println("NO Mï¿½S DE 5 (recordatorio)");
 				pestCom=0;
 			}
 			}	
 			while (numCop==0){						//Para asegurarnos de que sean 5 o menos
-				System.out.println("Introduzca número de copas de anís (recuerde que no más de 5)");
+				System.out.println("Introduzca nï¿½mero de copas de anï¿½s (recuerde que no mï¿½s de 5)");
 				numCop=Leer.datoInt();
 				
 				if (numCop>5){
-					System.out.println("NO MÁS DE 5 (recordatorio)");
+					System.out.println("NO Mï¿½S DE 5 (recordatorio)");
 					numCop=0;	
 				}
 			}
 				while (nivGrad==0){					//Para asegurarnos de que sean 5 o menos
-					System.out.println("Introduzca graduación (recuerde que no más de 5)");
+					System.out.println("Introduzca graduaciï¿½n (recuerde que no mï¿½s de 5)");
 					nivGrad=Leer.datoInt();
 					if (nivGrad>5){
-						System.out.println("NO MÁS DE 5 (recordatorio)");
+						System.out.println("NO Mï¿½S DE 5 (recordatorio)");
 						nivGrad=0;					
 				}
-				}	glotNav=pestCom;				//Así podré usar un glotNav como contador para modificar el valor de pestCom
+				}	glotNav=pestCom;				//Asï¿½ podrï¿½ usar un glotNav como contador para modificar el valor de pestCom
 				for(int i=0;i<glotNav;i++){			//Factorial de pestCom
 					fact=pestCom*fact;
 					pestCom--;
 				}
 			glotNav=fact+(int)Math.pow(numCop, nivGrad);		//Teorema
-			System.out.println("Su nivel de glotonería navideña es de "+glotNav);
-			if (glotNav>DOLOR_DE_BARRIGA)						//Comprobación con la constante
-				System.out.println("No sé cómo aún estás vivo.");
+			System.out.println("Su nivel de glotonerï¿½a navideï¿½a es de "+glotNav);
+			if (glotNav>DOLOR_DE_BARRIGA)						//Comprobaciï¿½n con la constante
+				System.out.println("No sï¿½ cï¿½mo aï¿½n estï¿½s vivo.");
 			else
-				System.out.println("Aún puedes seguir");
-			System.out.println("¿Desea repetir el programa?(S/N)");		//Le damos la opción al usuario de repetir el programa
+				System.out.println("Aï¿½n puedes seguir");
+			System.out.println("ï¿½Desea repetir el programa?(S/N)");		//Le damos la opciï¿½n al usuario de repetir el programa
 			salida=Leer.datoChar();
 			nivGrad=0;
 			numCop=0;	
